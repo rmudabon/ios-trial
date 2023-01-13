@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08CA19FD296E869B004D9F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA19FC296E869B004D9F83 /* AppDelegate.swift */; };
-		08CA1A01296E869B004D9F83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA1A00296E869B004D9F83 /* ViewController.swift */; };
+		08CA1A01296E869B004D9F83 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA1A00296E869B004D9F83 /* LandingViewController.swift */; };
 		08CA1A04296E869B004D9F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CA1A02296E869B004D9F83 /* Main.storyboard */; };
 		08CA1A07296E869B004D9F83 /* Marco_iOSProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08CA1A05296E869B004D9F83 /* Marco_iOSProject.xcdatamodeld */; };
 		08CA1A09296E86A2004D9F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CA1A08296E86A2004D9F83 /* Assets.xcassets */; };
@@ -16,6 +16,8 @@
 		08CA1A17296E86A3004D9F83 /* Marco_iOSProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA1A16296E86A3004D9F83 /* Marco_iOSProjectTests.swift */; };
 		08CA1A21296E86A3004D9F83 /* Marco_iOSProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA1A20296E86A3004D9F83 /* Marco_iOSProjectUITests.swift */; };
 		08CA1A23296E86A3004D9F83 /* Marco_iOSProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA1A22296E86A3004D9F83 /* Marco_iOSProjectUITestsLaunchTests.swift */; };
+		08CA1A382971262D004D9F83 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA1A372971262D004D9F83 /* Validators.swift */; };
+		08CA1A3A297127D0004D9F83 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CA1A39297127D0004D9F83 /* LandingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		08CA19F9296E869B004D9F83 /* Marco-iOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marco-iOSProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CA19FC296E869B004D9F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08CA1A00296E869B004D9F83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08CA1A00296E869B004D9F83 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		08CA1A03296E869B004D9F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08CA1A06296E869B004D9F83 /* Marco_iOSProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marco_iOSProject.xcdatamodel; sourceTree = "<group>"; };
 		08CA1A08296E86A2004D9F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		08CA1A1C296E86A3004D9F83 /* Marco-iOSProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marco-iOSProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CA1A20296E86A3004D9F83 /* Marco_iOSProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marco_iOSProjectUITests.swift; sourceTree = "<group>"; };
 		08CA1A22296E86A3004D9F83 /* Marco_iOSProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marco_iOSProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		08CA1A372971262D004D9F83 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		08CA1A39297127D0004D9F83 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,12 @@
 		08CA19FB296E869B004D9F83 /* Marco-iOSProject */ = {
 			isa = PBXGroup;
 			children = (
+				08CA1A33296FF234004D9F83 /* Resources */,
+				08CA1A32296FF229004D9F83 /* Networking */,
+				08CA1A31296FF218004D9F83 /* Views */,
+				08CA1A30296FF204004D9F83 /* Scenes */,
+				08CA1A2F296FF1F1004D9F83 /* Extensions */,
 				08CA19FC296E869B004D9F83 /* AppDelegate.swift */,
-				08CA1A00296E869B004D9F83 /* ViewController.swift */,
-				08CA1A02296E869B004D9F83 /* Main.storyboard */,
 				08CA1A08296E86A2004D9F83 /* Assets.xcassets */,
 				08CA1A0A296E86A2004D9F83 /* LaunchScreen.storyboard */,
 				08CA1A0D296E86A2004D9F83 /* Info.plist */,
@@ -125,6 +132,53 @@
 				08CA1A22296E86A3004D9F83 /* Marco_iOSProjectUITestsLaunchTests.swift */,
 			);
 			path = "Marco-iOSProjectUITests";
+			sourceTree = "<group>";
+		};
+		08CA1A2F296FF1F1004D9F83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				08CA1A372971262D004D9F83 /* Validators.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		08CA1A30296FF204004D9F83 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				08CA1A34296FF440004D9F83 /* LandingPage */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		08CA1A31296FF218004D9F83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08CA1A32296FF229004D9F83 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		08CA1A33296FF234004D9F83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		08CA1A34296FF440004D9F83 /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				08CA1A00296E869B004D9F83 /* LandingViewController.swift */,
+				08CA1A02296E869B004D9F83 /* Main.storyboard */,
+				08CA1A39297127D0004D9F83 /* LandingViewModel.swift */,
+			);
+			path = LandingPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CA1A07296E869B004D9F83 /* Marco_iOSProject.xcdatamodeld in Sources */,
-				08CA1A01296E869B004D9F83 /* ViewController.swift in Sources */,
+				08CA1A01296E869B004D9F83 /* LandingViewController.swift in Sources */,
 				08CA19FD296E869B004D9F83 /* AppDelegate.swift in Sources */,
+				08CA1A382971262D004D9F83 /* Validators.swift in Sources */,
+				08CA1A3A297127D0004D9F83 /* LandingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
